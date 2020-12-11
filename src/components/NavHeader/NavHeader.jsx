@@ -4,23 +4,26 @@ import { Link } from 'react-scroll';
 
 function NavHeader() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Container className="px-3">
-        <Navbar.Brand href="#home">Amarpreet Singh</Navbar.Brand>
-        <Nav className="mr-auto">
-          <Link to="about" smooth duration={1000}>
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
+      <Container className="p-3">
+        <Navbar.Brand href="#home" className="font-weight-bold">Amarpreet Singh</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="ml-auto">
+          <Link className="mx-4" to="about" smooth duration={1000}>
             About
           </Link>
-          <Link to="projects" smooth duration={1000}>
+          <Link className="mx-4" to="projects" smooth duration={1000}>
             Projects
           </Link>
-          <Link to="skills" smooth duration={1000}>
+          <Link className="mx-4" to="skills" smooth duration={1000}>
             Skills
           </Link>
-          <Link to="footer" smooth duration={1000}>
-            Contact
+          <Link className="mx-4 cta-btn cta-btn--contact" to="footer" smooth duration={1000}>
+            Say Hello
           </Link>
         </Nav>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );

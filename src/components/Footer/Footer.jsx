@@ -5,6 +5,7 @@ import { Link } from 'react-scroll';
 import Title from '../Title/Title';
 import PortfolioContext from '../../context/context';
 import GithubButtons from '../GithubButtons/GithubButtons';
+import ContactForm from '../ContactForm/ContactForm';
 
 import { githubButtons } from '../../mock/data';
 
@@ -23,6 +24,7 @@ const Footer = () => {
           </Link>
         </span>
         <Title title="Contact Me" />
+        <ContactForm />
         <Fade bottom duration={1000} delay={800} distance="30px">
           <div className="contact-wrapper">
             <p className="contact-wrapper__text">{cta}</p>

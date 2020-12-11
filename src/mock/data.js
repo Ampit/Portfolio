@@ -18,9 +18,8 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
-  paragraphOne:
-    'I am looking for new employment opportunities. I enjoy building creative websites and learning new skills.',
-  paragraphTwo: '',
+  paragraphOne: 'I merge a passion for usability and user experience with technical knowledge to create cool digital experiences.',
+  paragraphTwo: 'My repertoire includes programming languages and tools such as ReactJS, Javascript, PHP, HTML, CSS, NodeJs, Wordpress, MySQL, NPM, Nginx and Apache server configuration, SASS, Twitter Bootstrap, jQuery, and more.',
   paragraphThree: '',
   resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 };

@@ -4,11 +4,12 @@
   clip-path: polygon(0 11%, 100% 0, 100% 100%, 0% 100%);
   &__heading {
     // margin-top: 100px;
-    padding-top: 125px;
-    font-size: 56px;
+    padding-top: 10rem;
+    font-size: 4rem;
     text-align: center;
     color: white;
     @include mobile {
+      padding-top: 15rem;
       margin: 0;
       font-size: 40px;
     }
@@ -16,23 +17,22 @@
   &__container {
     width: 80%;
     align-items: center;
-    margin: 125px auto 0px;
-    padding-bottom: 5rem;
+    margin: 8rem auto 0px;
+    padding-bottom: 8rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     @include mobile {
       width: 90%;
-      margin: 40px auto 0;
+      margin: 5rem auto 0;
     }
     & > img,
     svg {
-      width: 125px;
-      height: 125px;
-      padding: 20px;
+      width: 10rem;
+      height: 10rem;
+      padding: 1rem;
       background-color: ghostwhite;
-      margin-bottom: 75px;
-      margin-right: 25px;
+      margin:3rem;
       // clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
       border-radius: 35%;
       box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
@@ -42,10 +42,10 @@
         transform: scale(1.05, 1.05);
       }
       @include mobile {
-        width: 100px;
-        height: 100px;
-        padding: 10px;
-        margin-right: 4px;
+        width: 6rem;
+        height: 6rem;
+        padding: 5px;
+        margin: 1.5rem;
         &:hover {
           box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
           transform: scale(1.05, 1.05);
