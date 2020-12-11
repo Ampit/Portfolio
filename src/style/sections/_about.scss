@@ -1,10 +1,6 @@
 #about {
   background-color: $primary-color;
-  background-image: linear-gradient(
-    135deg,
-    $primary-color 0%,
-    $secondary-color 100%
-  );
+  background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
   color: $white-color;
   height: 100%;
   border-top: 0px;
@@ -77,5 +73,78 @@
         }
       }
     }
+  }
+}
+
+.wrap {
+  width: 300px;
+  margin: auto 0;
+  padding-bottom: 150px;
+  @include mobile {
+    width: 230px;
+    margin: 0 auto 300px;
+    padding: 0;
+  }
+  @include tablet {
+    margin: 100px auto 200px;
+  }
+  &__cube {
+    transform-style: preserve-3d;
+    animation: cubeRotation 10s infinite linear;
+  }
+}
+.cube {
+  //background-color: rgba(255, 255, 255, 0.4);
+  width: 290px;
+  height: 300px;
+  position: absolute;
+  overflow: hidden;
+  @include mobile {
+    width: 230px;
+  }
+  &__img {
+    display: flex;
+    justify-content: center;
+    // align-content: center;
+    margin: auto;
+    //    padding-top: 50px;
+    width: 180px;
+    height: 180px;
+    @include mobile {
+      width: 170px;
+    }
+  }
+  &__front {
+    transform: translateZ(9rem);
+    @include mobile {
+      transform: translateZ(7rem);
+    }
+  }
+  &__right {
+    transform: rotateY(-90deg) translateZ(9rem);
+    @include mobile {
+      transform: rotateY(-90deg) translateZ(7rem);
+    }
+  }
+  &__left {
+    transform: rotateY(90deg) translateZ(9rem);
+    @include mobile {
+      transform: rotateY(90deg) translateZ(7rem);
+    }
+  }
+  &__back {
+    transform: translateZ(-9rem) rotateY(180deg);
+    @include mobile {
+      transform: rotateY(180deg) translateZ(7rem);
+    }
+  }
+}
+
+@keyframes cubeRotation {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(360deg);
   }
 }

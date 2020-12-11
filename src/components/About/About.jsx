@@ -2,8 +2,12 @@ import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
-import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
+
+import node from '../../images/node.png';
+import js from '../../images/js1.png';
+import react from '../../images/react.png';
+import redux from '../../images/redux.png';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
@@ -30,7 +34,22 @@ const About = () => {
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
               <div className="about-wrapper__image">
-                <AboutImg alt="profile picture" filename={img} />
+                <div className="wrap">
+                  <div className="wrap__cube">
+                    <div className="cube cube__front">
+                      <img className="cube__img" src={redux} alt="front" />
+                    </div>
+                    <div className="cube cube__right">
+                      <img className="cube__img" src={js} alt="right" />
+                    </div>
+                    <div className="cube cube__left">
+                      <img className="cube__img" src={node} alt="left" />
+                    </div>
+                    <div className="cube cube__back">
+                      <img className="cube__img" src={react} alt="back" />
+                    </div>
+                  </div>
+                </div>
               </div>
             </Fade>
           </Col>
@@ -41,13 +60,12 @@ const About = () => {
                   {paragraphOne ||
                     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
                 </p>
-                <p className="about-wrapper__info-text">
-                  {paragraphTwo ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
-                </p>
-                <p className="about-wrapper__info-text">
-                  {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
-                </p>
+                {paragraphTwo && '<p className="about-wrapper__info-text">'}
+                {paragraphTwo}
+                {paragraphTwo && '</p>'}
+                {paragraphThree && '<p className="about-wrapper__info-text">'}
+                {paragraphThree}
+                {paragraphThree && '</p>'}
                 {resume && (
                   <span className="d-flex mt-3">
                     <a

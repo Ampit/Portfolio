@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import NavHeader from './NavHeader/NavHeader';
 import Hero from './Hero/Hero';
 import About from './About/About';
 import Projects from './Projects/Projects';
-import Contact from './Contact/Contact';
+import Skills from './Skills/Skills';
 import Footer from './Footer/Footer';
 
 import { PortfolioProvider } from '../context/context';
@@ -26,10 +27,11 @@ function App() {
 
   return (
     <PortfolioProvider value={{ hero, about, projects, contact, footer }}>
+      <NavHeader />
       <Hero />
       <About />
       <Projects />
-      <Contact />
+      <Skills />
       <Footer />
     </PortfolioProvider>
   );

@@ -1,24 +1,41 @@
 import React, { useContext } from 'react';
+import Fade from 'react-reveal/Fade';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-scroll';
+import Title from '../Title/Title';
 import PortfolioContext from '../../context/context';
 import GithubButtons from '../GithubButtons/GithubButtons';
 
 import { githubButtons } from '../../mock/data';
 
 const Footer = () => {
-  const { footer } = useContext(PortfolioContext);
+  const { footer, contact } = useContext(PortfolioContext);
   const { networks } = footer;
   const { isEnabled } = githubButtons;
+  const { cta, btn, email } = contact;
 
   return (
-    <footer className="footer navbar-static-bottom">
+    <footer id="footer" className="footer navbar-static-bottom">
       <Container>
         <span className="back-to-top">
           <Link to="hero" smooth duration={1000}>
             <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
           </Link>
         </span>
+        <Title title="Contact Me" />
+        <Fade bottom duration={1000} delay={800} distance="30px">
+          <div className="contact-wrapper">
+            <p className="contact-wrapper__text">{cta}</p>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta-btn cta-btn--resume"
+              href={email ? `mailto:${email}` : 'https://github.com/cobidev/react-simplefolio'}
+            >
+              {btn || "Let's Talk"}
+            </a>
+          </div>
+        </Fade>
         <div className="social-links">
           {networks &&
             networks.map((network) => {
@@ -37,12 +54,7 @@ const Footer = () => {
             })}
         </div>
         <hr />
-        <p className="footer__text">
-          © {new Date().getFullYear()} - Template developed by{' '}
-          <a href="https://github.com/cobidev" target="_blank" rel="noopener noreferrer">
-            Jacobo Martínez
-          </a>
-        </p>
+        <p className="footer__text">© {new Date().getFullYear()}</p>
 
         {isEnabled && <GithubButtons />}
       </Container>

@@ -2,23 +2,24 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: '', // e.g: 'Name | Developer'
-  lang: '', // e.g: en, es, fr, jp
-  description: '', // e.g: Welcome to my website
+  title: 'Amarpreet Singh | Full Stack Developer', // e.g: 'Name | Developer'
+  lang: 'en', // e.g: en, es, fr, jp
+  description: 'Portfolio', // e.g: Welcome to my website
 };
 
 // HERO DATA
 export const heroData = {
-  title: '',
-  name: '',
-  subtitle: '',
-  cta: '',
+  title: "Hi, I'm",
+  name: 'Amarpreet Singh',
+  subtitle: 'Full Stack Developer.',
+  cta: 'Check projects',
 };
 
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
-  paragraphOne: '',
+  paragraphOne:
+    'I am looking for new employment opportunities. I enjoy building creative websites and learning new skills.',
   paragraphTwo: '',
   paragraphThree: '',
   resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
@@ -58,8 +59,8 @@ export const projectsData = [
 // CONTACT DATA
 export const contactData = {
   cta: '',
-  btn: '',
-  email: '',
+  btn: 'singh.amarpreet.ca@gmail.com',
+  email: 'singh.amarpreet.ca@gmail.com',
 };
 
 // FOOTER DATA
@@ -68,27 +69,27 @@ export const footerData = {
     {
       id: nanoid(),
       name: 'twitter',
-      url: '',
+      url: 'https://twitter.com/Ampit_xd',
     },
     {
       id: nanoid(),
       name: 'codepen',
-      url: '',
+      url: 'https://codepen.io/ampit',
     },
     {
       id: nanoid(),
       name: 'linkedin',
-      url: '',
+      url: 'https://www.linkedin.com/in/amarpreet--singh/',
     },
     {
       id: nanoid(),
       name: 'github',
-      url: '',
+      url: 'https://github.com/Ampit',
     },
   ],
 };
 
 // Github start/fork buttons
 export const githubButtons = {
-  isEnabled: true, // set to false to disable the GitHub stars/fork buttons
+  isEnabled: false, // set to false to disable the GitHub stars/fork buttons
 };
