@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import Fade from 'react-reveal/Fade';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import Title from '../Title/Title';
@@ -10,10 +9,10 @@ import ContactForm from '../ContactForm/ContactForm';
 import { githubButtons } from '../../mock/data';
 
 const Footer = () => {
-  const { footer, contact } = useContext(PortfolioContext);
+  const { footer } = useContext(PortfolioContext);
   const { networks } = footer;
   const { isEnabled } = githubButtons;
-  const { cta, btn, email } = contact;
+  // const { cta, btn, email } = contact;
 
   return (
     <footer id="footer" className="footer navbar-static-bottom">
@@ -25,7 +24,7 @@ const Footer = () => {
         </span>
         <Title title="Contact Me" />
         <ContactForm />
-        <Fade bottom duration={1000} delay={800} distance="30px">
+        {/* <Fade bottom duration={1000} delay={800} distance="30px">
           <div className="contact-wrapper">
             <p className="contact-wrapper__text">{cta}</p>
             <a
@@ -37,7 +36,7 @@ const Footer = () => {
               {btn || "Let's Talk"}
             </a>
           </div>
-        </Fade>
+        </Fade> */}
         <div className="social-links">
           {networks &&
             networks.map((network) => {

@@ -60,12 +60,8 @@ const About = () => {
                   {paragraphOne ||
                     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
                 </p>
-                <p className="about-wrapper__info-text">
-                  {paragraphTwo}
-                </p>
-                <p className="about-wrapper__info-text">
-                {paragraphThree}
-                </p>
+                <p className="about-wrapper__info-text">{paragraphTwo}</p>
+                <p className="about-wrapper__info-text">{paragraphThree}</p>
                 {resume && (
                   <span className="d-flex mt-3">
                     <a
