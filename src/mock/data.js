@@ -20,7 +20,7 @@ export const aboutData = {
   paragraphOne:
     'I merge a passion for usability and user experience with technical knowledge to create cool digital experiences.',
   paragraphTwo:
-    'My repertoire includes programming languages and tools such as ReactJS, Javascript, PHP, HTML, CSS, NodeJs, Wordpress, MySQL, NPM, Nginx and Apache server configuration, SASS, Twitter Bootstrap, jQuery, and more.',
+    'My repertoire includes programming languages and tools such as ReactJS, Javascript, PHP, HTML, CSS, NodeJs, Wordpress, MySQL, NPM, Nginx and Apache server configuration, SCSS, Twitter Bootstrap, jQuery, and more.',
   paragraphThree: '',
   resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 };
@@ -29,9 +29,27 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
+    img: 'chat-app.jpg',
+    title: 'React Firebase Chat App',
+    info: 'Single Page Chat App created using React, Firebase, Google Auth.',
+    info2: '',
+    url: 'https://chat-app-b6f5e.web.app/',
+    repo: 'https://github.com/Ampit/chat-app-react-firebase', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
     img: 'project.jpg',
-    title: '',
-    info: '',
+    title: 'MyMovie',
+    info: 'React project that helps the user to find movies based on their mood. Users can watch trailers and also check availability of movies on Netflix.',
+    info2: 'It has advance search page to choose a movie, but it’s only available to signed-in users',
+    url: '',
+    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'project.jpg',
+    title: 'COVID-19 Tracker',
+    info: 'A fully responsive application made to track the total No. of cases of coronavirus in the world. It visualize data in table and card forms',
     info2: '',
     url: '',
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
@@ -39,17 +57,8 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
+    title: 'Expense Tracker',
+    info: 'A full stack application for tracking and managing expenses built using MERN stack.',
     info2: '',
     url: '',
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
