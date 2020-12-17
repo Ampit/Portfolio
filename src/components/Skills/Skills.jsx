@@ -4,7 +4,6 @@ import html from '../../images/html.png';
 import node from '../../images/node.png';
 import js from '../../images/js1.png';
 import react from '../../images/react.png';
-import sass from '../../images/sass.png';
 import git from '../../images/github.png';
 import mongo from '../../images/mongo1.png';
 import css from '../../images/css1.png';
@@ -25,7 +24,6 @@ const Skills = () => {
           <img src={redux} alt="logos" />
           <img src={node} alt="logos" />
           <img src={html} alt="logos" />
-          <img src={sass} alt="logos" />
           <img src={css} alt="logos" />
           <img src={firebase} alt="logos" />
           <img src={mongo} alt="logos" />
