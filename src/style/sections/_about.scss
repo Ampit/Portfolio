@@ -91,6 +91,10 @@
   height: 20rem;
   position: absolute;
   overflow: hidden;
+
+  @include respond(tab-land) {
+    width: 20rem;
+  }
   &__img {
     display: flex;
     justify-content: center;

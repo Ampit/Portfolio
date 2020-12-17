@@ -38,30 +38,31 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: 'MyMovie',
-    info: 'React project that helps the user to find movies based on their mood. Users can watch trailers and also check availability of movies on Netflix.',
-    info2: 'It has advance search page to choose a movie, but it’s only available to signed-in users',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    img: 'author-quiz.jpg',
+    title: 'AuthorQuiz',
+    info: 'Simple quiz app built using React.',
+    info2: 'User has to guess the book written by the author whose picture is shown.',
+    url: 'https://cryptic-sea-12186.herokuapp.com/',
+    repo: 'https://github.com/Ampit/AuthorQuiz', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'covid.png',
     title: 'COVID-19 Tracker',
-    info: 'A fully responsive application made to track the total No. of cases of coronavirus in the world. It visualize data in table and card forms',
+    info:
+      'A fully responsive application made to track the total No. of cases of coronavirus in the world. It visualize data in table and card forms',
     info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    url: 'https://covid-19-trac.netlify.app/',
+    repo: 'https://github.com/Ampit/covid19-tracker', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'expense-tracker.png',
     title: 'Expense Tracker',
     info: 'A full stack application for tracking and managing expenses built using MERN stack.',
     info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    url: 'https://frozen-headland-41322.herokuapp.com/',
+    repo: 'https://github.com/Ampit/Expense-Tracker-Fullstack', // if no repo, the button will not show up
   },
 ];
 
