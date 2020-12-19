@@ -22,7 +22,7 @@ export const aboutData = {
   paragraphTwo:
     'My repertoire includes programming languages and tools such as ReactJS, Javascript, PHP, HTML, CSS, NodeJs, Wordpress, MySQL, NPM, Nginx and Apache server configuration, SCSS, Twitter Bootstrap, jQuery, and more.',
   paragraphThree: '',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  resume: 'https://resume.io/r/HI9NFXyrl', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
