@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { nanoid } from 'nanoid';
 // HEAD DATA
 export const headData = {
@@ -27,6 +28,16 @@ export const aboutData = {
 
 // PROJECTS DATA
 export const projectsData = [
+  {
+    id: nanoid(),
+    img: 'mymovie.png',
+    title: 'My Movie',
+    info:
+      'React project that helps the user to find movies based on their mood. Users can watch trailers and also check availability of movies on Netflix. It has advance search page to choose a movie, but it’s only available to signed-in users',
+    info2: 'React / Node.js / Express / MongoDB / OAuth/ The Movie DataBase API',
+    url: 'http://mymovie-d.herokuapp.com/',
+    repo: '', // if no repo, the button will not show up
+  },
   {
     id: nanoid(),
     img: 'chat-app.jpg',
